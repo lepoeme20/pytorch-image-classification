@@ -6,10 +6,11 @@
     - ResNet 50
     - ResNet 101
 
-#### To Do
-- 
+- To Do
+    - 
 
 ## **Datasets**
+#### All data has the same resolution of 32x32
 - MNIST
 - FMNIST
 - CelebA
