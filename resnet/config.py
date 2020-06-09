@@ -34,7 +34,7 @@ def default_parser_setting(parser):
         help="# of workers for dataloader"
     )
     default_arg.add_argument(
-        '--pretrained-dir', default="./pretrained_models/", type=str,
+        '--save-dir', default="./pretrained_models/", type=str,
         help='saving path to pretrained model'
     )
     default_arg.add_argument(

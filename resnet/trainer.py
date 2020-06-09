@@ -16,7 +16,7 @@ def train(args):
     Returns:
         [type] -- [description]
     """
-    save_root = os.path.join(args.pretrained_dir, args.dataset)
+    save_root = os.path.join(args.save_dir, args.dataset)
     os.makedirs(save_root, exist_ok=True)
     save_path = os.path.join(save_root, args.classifier + '.pth')
 
@@ -24,7 +24,7 @@ def train(args):
 
     net = classifier(
         args=args, clf=args.classifier, train=args.train,
-        pretrained_dir=args.pretrained_dir)
+        pretrained_dir=args.save_dir)
 
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(net.parameters(), lr=args.lr_clf, momentum=0.9)

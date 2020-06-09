@@ -18,6 +18,6 @@ train='true'
 python main.py --batch-size $batch_size --classifier $classifier \
     --num-classes $class_num --dataset $dataset --data-root-path $data_path \
     --epochs $epochs --device-ids ${gpu_ids[@]} --image-size $image_size \
-    --pretrained-dir $pretrained_path --train $train \
+    --save-dir $pretrained_path --train $train \
     --image-channels $image_channels
     
