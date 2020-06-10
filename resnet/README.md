@@ -56,16 +56,24 @@ Arguments description in trainer.sh:
     - In inference phase: path for loading the best model
 - train: if 'true' the model start training else the model run for inference
 
+## **Inference**
+Check performance of the model after training
+
+Arguments in the `inference.sh` are same as `trainer.sh`
+```
+#!/bin/bash
+sudo sh inference.sh
+```
 
 ## **pre-trained weights and performance**
 
+There are model performances and pre-trained weights link.
+
         | ResNet18 | ResNet50 | ResNet101
  :----: | :------: | :------: | :------: 
- Cifar10| 91%([link](https://drive.google.com/file/d/1S80m3XS367HicRpghKTiIpV8GlR3lPDB/view?usp=sharing))    |   91%    |   91%    
- :----: | :------: | :------: | :------: 
- MNIST  |   99%    |   99%    |   99%    
- :----: | :------: | :------: | :------: 
- FMNIST |   93%    |   92%    |   93%    
+ Cifar10| 91%([link](https://drive.google.com/file/d/1S80m3XS367HicRpghKTiIpV8GlR3lPDB/view?usp=sharing))    |   91%([link](https://drive.google.com/file/d/1VOrf6WkwgVZ1E-6JDegoNR0A-vGdNMEh/view?usp=sharing))    |   91%([link](https://drive.google.com/file/d/1zTYJ9R3suK_N0vV0BmntGGOU0DncWcfR/view?usp=sharing))    
+ MNIST  |   99%([link](https://drive.google.com/file/d/15yhYjaiQteFI2iXXnaKE5cv4pD0VtVY2/view?usp=sharing))    |   99%([link](https://drive.google.com/file/d/1aNH8qfHuNWCnvPRnIsxi9Mz5F8UFzkP0/view?usp=sharing))    |   99%([link](https://drive.google.com/file/d/1Hh5r0GV1sqYdH2_nhAMOOINQpA1EqSdn/view?usp=sharing))    
+ FMNIST |   93%([link](https://drive.google.com/file/d/1Ax48EwUqwwyR6a9v6088bJXuXgBbqCEG/view?usp=sharing))    |   92%([link](https://drive.google.com/file/d/1jb7Kayhd9nMkplFYooWViaUOVG6DUQnR/view?usp=sharing))    |   93%([link](https://drive.google.com/file/d/1dSyys4mszawB-lS2z_v3Xnp8NV7GR8mu/view?usp=sharing))    
 
 
 
