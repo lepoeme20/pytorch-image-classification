@@ -16,7 +16,7 @@ def inference(args):
 
     net = clf(
         args=args, clf=args.classifier, train=args.train,
-        pretrained_dir=args.pretrained_dir)
+        pretrained_dir=args.save_dir)
 
     net.to(args.device)
     if torch.cuda.device_count() > 0:

@@ -51,8 +51,6 @@ def train(args):
             # get inputs
             inputs, labels = data
             inputs, labels = inputs.to(device), labels.to(device)
-            if args.dataset.lower() == 'celeba':
-                labels = labels[:, 20]
 
             # zero the parameter gradients
             optimizer.zero_grad()
@@ -73,9 +71,6 @@ def train(args):
         for idx, dev in enumerate(devloader):
             imgs, labels = dev
             imgs, labels = imgs.to(device), labels.to(device)
-
-            if args.dataset.lower() == 'celeba':
-                labels = labels[:, 20]
 
             net.eval()
             with torch.no_grad():
